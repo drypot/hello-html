@@ -1,0 +1,55 @@
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.comments .comment {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  border: 1px solid rgb(222, 226, 230);
+  border-radius: 4px;
+}
+
+.comments .comment .name {
+  flex: 1 0 auto;
+  background-color: rgb(248, 249, 250);
+  font-weight: bold;
+  padding: 0.3em 0.5em;
+}
+
+.comments .comment .date {
+  flex: 0 0 auto;
+  margin-left: auto;
+  background-color: rgb(248, 249, 250);
+  padding: 0.3em 0.5em;
+  font-size: 0.8em;
+}
+
+.comments .comment .text {
+  flex: 0 1 auto;
+  padding: 0.3em 0.5em;
+}
+
+@media (min-width: 768px) {
+  .comments .comment {
+    flex-wrap: nowrap;
+  }
+
+  .comments .comment .name {
+    order: 1;
+    flex: 0 0 auto;
+  }
+  
+  .comments .comment .date {
+    order: 3;
+    flex: 0 0 auto;
+    background-color: white;
+  }
+  
+  .comments .comment .text {
+    order: 2;
+    flex: 1 1 auto;
+  }
+}
