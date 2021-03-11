@@ -1,3 +1,8 @@
-# HTML Hello
+# Hello HTML
 
-혼자 노는 HTML 놀이터.
+HTML 놀이터.
+
+
+## License
+
+[MIT](LICENSE)
